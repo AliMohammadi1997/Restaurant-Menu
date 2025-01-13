@@ -18,7 +18,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
 }
@@ -28,46 +28,46 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 1.3rem;
 }
 
 .title h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .underLine {
     background-color: rgb(173, 136, 80);
-    width: 100px;
-    height: 3px;
+    width: 6.2rem;
+    height: 0.2rem;
     border-radius: 1px;
-    position: relative;
-    top: -35px;
+    position: absolute;
+    top: 7rem;
 }
 
 .mainBtn {
     display: flex;
     justify-content: start;
     align-items: start;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 .btnCategory {
     border: none;
     background-color: inherit;
     color: rgb(173, 136, 80);
-    margin: 0 15px;
-    font-size: 18px;
+    margin: 0 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .highLight {
-    /* font-family: serif; */
+    font-family: serif;
     border: none;
     border-radius: 5px;
-    margin: 0 15px;
-    padding: 8px;
-    font-size: 18px;
+    margin: 0 0.9rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
     font-weight: 200;
     cursor: pointer;
     background-color: rgb(173, 136, 80);
@@ -87,16 +87,17 @@ main {
     display: flex;
     justify-content: start;
     align-items: start;
-    margin: 20px 10px;
-    max-width: 45%;
+    margin: 1.2rem 0.6rem;
+    /* max-width: 45%; */
+    min-width: 20rem;
 }
 
 .menuItemImg {
-    width: 40%;
-    height: 150px;
+    width: 12rem;
+    height: 10rem;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-right: 20px;
+    margin-right: 1.2rem;
     border: 3px solid rgb(173, 136, 80);
     object-fit: cover;
 }
@@ -119,7 +120,7 @@ main {
     margin: 0;
     padding-bottom: 3px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
     flex: 5;
 }
 
@@ -130,6 +131,31 @@ main {
 }
 
 .menuItemDesc {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: rgb(51, 50, 50);
+}
+
+
+@media  (max-width: 425px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (min-width:  425px) and (max-width:  768px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (min-width:  768px) and (max-width:  1024px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:600px) {
+    .menuItem{
+        max-width: 45%;
+    }
 }
